@@ -1,0 +1,29 @@
+.ion-spacer {
+  width: 100%;
+  margin-top: 1000px;
+}
+
+.ion-spacer-10 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.ion-spacer-20 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ion-spacer-30 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.ion-spacer-40 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ion-spacer-50 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}

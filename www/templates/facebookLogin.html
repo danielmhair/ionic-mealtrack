@@ -1,0 +1,21 @@
+<ion-view view-title="Facebook Connect" hide-nav-bar="true" hide-back-button="true">
+  <ion-content padding="true" scroll="false" class="center-content padding">
+
+    <!-- Form with floating labels -->
+    <form ng-submit="login(loginForm)" novalidate="novalidate" name="loginForm">
+      <ion-spacer padding="50"></ion-spacer>
+      <img src="../img/facebook.png">
+      <ion-spacer padding="50"></ion-spacer>
+      <p class="text-center">Connect your data with Facebook</p>
+      <button class="button button-positive button-block" type="button" ng-click="facebookConnect()">
+        Log In with Facebook
+      </button >
+    </form >
+    <p class="text-center">
+      Don't have an account?
+      <a nav-direction="enter" ui-sref="signup" >Sign Up
+      </a>
+    </p>
+
+  </ion-content>
+</ion-view>

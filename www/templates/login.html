@@ -1,0 +1,48 @@
+<ion-view view-title="Google Plus Connect"
+          hide-back-button="true">
+  <ion-content padding="true"
+               scroll="false">
+
+    <!-- Form with floating labels -->
+    <form ng-submit="login(loginForm)"
+          novalidate="novalidate"
+          name="loginForm">
+      <ion-list>
+        <label class="item item-input item-floating-label"
+               ng-class="{ 'has-error': loginForm.email.$invalid }">
+          <span class="input-label">Email</span>
+          <input type="email" placeholder="Email" ng-model="formData.email" ng-required="true" name="email">
+        </label>
+
+        <div class="form-errors" ng-messages="loginForm.email.$error">
+          <div class="form-error" ng-messages-include="templates/form-errors.html"></div>
+        </div>
+
+        <label class="item item-input item-floating-label"
+               ng-class="{ 'has-error': loginForm.password.$invalid }">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="Password" ng-model="formData.password"
+                 ng-required="true" name="password" ng-minlength="6">
+        </label>
+
+        <div class="form-errors" ng-messages="loginForm.password.$error">
+          <div class="form-error" ng-messages-include="templates/form-errors.html"></div>
+        </div>
+      </ion-list>
+      <button class="button button-calm button-block" type="submit">Login</button>
+    </form>
+    <p class="text-center">
+      Don't have an account? <a nav-direction="enter" ui-sref="signup">Sign Up</a>
+    </p>
+
+    <ion-spacer padding="30"></ion-spacer>
+    <hr/>
+    <ion-spacer padding="30"></ion-spacer>
+    <button class="button button-assertive button-block" type="button" ng-click="googleConnect()">
+      Log In with Google Plus
+    </button>
+    <button class="button button-positive button-block" type="button" ng-click="facebookConnect()">
+      Log In with Facebook
+    </button>
+  </ion-content>
+</ion-view>
